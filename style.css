@@ -54,7 +54,7 @@ header {
     text-decoration: none;
     font-weight: 500;
     /* padding:2px; */
-    margin-left: 35px ;
+    margin: 35px ;
     border-bottom: 2x solid transparent;
     transition: 0.1s  ease ;
  
@@ -64,9 +64,9 @@ header {
 } 
 .pic-home {
     position: relative;
-    width: 32vw;
-    top: 140px;
-    left: 10%;
+    width: 22vw;
+    top: 130px;
+    left: 15%;
     /* border: 4px solid ; */
     border-radius: 100%;
     cursor: pointer;
@@ -102,7 +102,7 @@ header {
 }
 .name-gradient {
     color: #fb7575;
-    margin: 10px;
+    margin: -10px;
     font-size: larger;
 }
 .home h3 {
@@ -119,6 +119,8 @@ header {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    /* position: relative;
+    left: -10px; */
     color: #fff;
     width: 4rem;
     height: 4rem;
@@ -139,7 +141,7 @@ header {
     color: white;
     text-decoration: none;
     padding: 15px;
-    margin: 24px;
+    margin: 20px;
     transition: .5s ease;
     border: 2px solid #fb7575;
     border-radius: 30px;
@@ -151,5 +153,107 @@ header {
     box-shadow: 0 0 20px #f88d8d;
     transform: scale(1) translateY(-3px);
 }
+.home .left-text h1, .name-gradient, .typing-text, p {
+    position: relative;
+    left: 25px;
+}
+
+.typing-text span {
+     color: #d19e9e;
+     animation: do 3s infinite;
+     /* transition: .5 ease; */
+  }
+
+  @keyframes do {
+    0%,40% { color: #d96969;  }
+    41%,80% { color: #fb7575;  }
+    81%,100% {color: #f88d8d;}
+    
+  }
+  
+  
 
 
+  @media (max-width: 915px) {
+    body {
+      overflow-x: visible;
+    }
+    .logo {
+        visibility: hidden;
+    }
+  
+    .container {
+      border-radius: 0;
+      padding: 10px;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 45px;
+    }
+  
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    .navbar a {
+      margin: 10px 15px;
+      font-size: 16px;
+    }
+  
+    .pic-home {
+      
+      width: 50vw;
+      top: 50px;
+      left: 1%;
+    }
+  
+    .home {
+      flex-direction: column;
+      gap: 2rem;
+      padding-top: 100px;
+      text-align: center;
+    }
+  
+    .left-text {
+      top: 50px;
+      left: -30px;
+      padding: 10px;
+    }
+  
+    .home h3 {
+      font-size: 2.2rem;
+      left: 40px;
+    }
+  
+    .left-text p {
+      font-size: 0.9rem;
+      line-height: 1.4rem;
+    }
+  
+    .social-icons {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .social-icons a {
+        position: relative;
+        left: 30px;
+      margin: 10px;
+      width: 3rem;
+      height: 3rem;
+    }
+  
+    .button-hireme, .button-cv {
+        position: relative;
+        top: 20px;
+        left: 30px;
+      padding: 10px 20px;
+      margin: 10px;
+    }
+  }
+  
